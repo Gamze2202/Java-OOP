@@ -1,0 +1,26 @@
+class Car { // "public" değil çünkü tek dosyada yazıyoruz
+    String color;
+    String model;
+    int year;
+    int speed;
+
+    public void drive() {
+        
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car();
+        myCar.color = "Red";
+        myCar.model = "BMW";
+        myCar.year = 2020;
+        myCar.speed = 120;
+
+        System.out.println("My car is a " + myCar.model + 
+            " with a color of " + myCar.color + 
+            ". It is a " + myCar.year + 
+            " model and it can go up to " + myCar.speed + " km/h.");
+        myCar.drive();
+    }
+}
