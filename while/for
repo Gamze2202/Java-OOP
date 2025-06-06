@@ -1,0 +1,25 @@
+public class Main {
+  public static void main(String[] args) {
+    int i = 0;
+    while (i < 3) {               // dış döngü: 3 satır
+      int j = 0;
+      while (j < 4) {             // iç döngü: 4 sütun
+        System.out.print("* ");
+        j++;
+      }
+      System.out.println();       // satır sonu
+      i++;
+    }
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    for (int i = 0; i < 3; i++) {
+      for (int j = 0; j < 4; j++) {
+        System.out.print("* ");
+      }
+      System.out.println();
+    }
+  }
+}
